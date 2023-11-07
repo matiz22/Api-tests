@@ -27,10 +27,6 @@ NEW_PROFILE_DATA='{
 }'
 curl -X POST -k -H "Authorization: Bearer $API_KEY" -H "Content-Type: application/json" -d "$NEW_PROFILE_DATA" "$BASE_API_ENDPOINT/smtp"
 
-
-PROFILE_ID="1"
-curl -X DELETE -k -H "Authorization: Bearer $API_KEY" "$BASE_API_ENDPOINT/smtp/$PROFILE_ID"
-
 UPDATED_PROFILE_DATA='{
   "id": 1,
   "name": "Updated Johnny",
